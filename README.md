@@ -24,6 +24,6 @@ To run your tests
 
 -  Table of  Contents  401
 
-| Title                                                                             | Description                    |
-| -----------                                                                       | -----------                    |
-|[README](https://haninhaidrah.github.io/data-structure-and-algorithms/js)          |  README                         |
+| Title                                                                                | Description                    |
+| -----------                                                                          | -----------                    |
+|[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/js)|  README                         |
