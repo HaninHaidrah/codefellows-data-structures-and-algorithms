@@ -28,4 +28,4 @@ To run your tests
 | -----------                                                                          | -----------                    |
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/codeChallenge1)                                                                        |  README1                        |
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/codeChallenge2)                                                                        |  README2                        |
-
+|[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/codeChallenge3)                                                                        |  README3                        |
