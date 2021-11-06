@@ -2,7 +2,7 @@
 Its kind of practicing whiteboard challange with functions
 
 ## Whiteboard Process
-![img](challange3.jpg)
+![img](code3.jpg)
 
 ## Approach & Efficiency
  It took 30minutes to do whiteboard challange
