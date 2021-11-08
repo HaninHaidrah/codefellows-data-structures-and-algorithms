@@ -24,10 +24,11 @@ To run your tests
 
 -  Table of  Contents  401
 
-| Title                                                                                                       | Description                     |
-| -----------                                                                                                 | -----------                     |
+| Title                                                                                                       | Description                    |
+| -----------                                                                                                 | -----------                    |
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/codeChallenge1)           |  reverse-array                  |
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/codeChallenge2)           |  shift-array                    |
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/codeChallenge3)           |  array-binary-search            |
-|[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/new-implementation/test)  |  linked-list                    | 
-
+|[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge5)                                                                                              |  linked-list                    | 
+|[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge-6)                                                                                             |  linked-list-insertation        | 
+ 
