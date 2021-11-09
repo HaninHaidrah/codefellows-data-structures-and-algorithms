@@ -17,11 +17,12 @@ class LinkedList {
       let currentValue = this.head;
       while (currentValue.next) {
         currentValue = currentValue.next;
+
       }
       currentValue.next = node;
-      this.length++;
-
     }
+    this.length++;
+
   }
   // insert onemethod that takes parameter
 
@@ -34,8 +35,8 @@ class LinkedList {
     }
 
     let current = this.head;
-    let i = this.length - 1 - k;
-    while (i > 0) {
+    let i = this.length - 1  ;
+    while (i > k) {
       current = current.next;
       i--;
     }
