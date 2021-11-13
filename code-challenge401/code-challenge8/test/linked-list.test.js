@@ -37,5 +37,4 @@ it('can return no input if the two linked lists are empty',()=>{
 
   expect(newList.zipLists(l1,l2).toString()).toEqual("");
 });
-});
 
