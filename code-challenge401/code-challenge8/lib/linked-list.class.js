@@ -1,68 +1,95 @@
-"use strict";
 
-const Node = require("./node.class");
-
+'use strict';
+const Node = require('./node.class');
 class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
-    this.length=0;
+    this.length = 0;
   }
-  
-  append(value) {
-    const node = new Node(value);
-    if (!this.head) {
-      this.head = node;
-    } else {
-      let currentValue = this.head;
-      while (currentValue.next) {
-        currentValue = currentValue.next;
 
+// use them for testing only:
+  toString() {
+    let currentNode = this.head;
+    let string = "";
+    while (currentNode) {
+      string += `{ ${currentNode.value} }->`;
+      currentNode = currentNode.next;
+      if (!currentNode) {
+        string += "X";
       }
-      currentValue.next = node;
+    }
+    return string;
+  }
+// use it to append nodes:
+  append(value) {
+    let newNode = new Node(value);
+
+    if (!this.head) {
+      this.head = newNode;
+    } else {
+      let currentNode = this.head;
+      while (currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = newNode;
     }
     this.length++;
-
-  }
-zipLists(linked1,linked2){
-  let zipList=new LinkedList();
-  // check if the heads for them empty:
-  if(!linked1.head){
-    return linked2
-  }
-  if(!linked2.head){
-    return linked1
   }
 
+  zipLists(linked1, linked2) {
+
+    let newList = new LinkedList();
+
+      // check if the heads for them empty:
+    if (!linked1.head) {
+      return linked2;
+    }
+
+    if (!linked2.head) {
+      return linked1;
+    }
+
+    if (!linked1.head && !linked2.head) {
+      return console.log('cant find inputs');
+    }
   // declare the variables-pointers:
-  let temp1=linked1.head;
-  let temp2=linked2.head;
-  let longLength;
 
-  // identify which one is longer;
-  if(linked1.length>=linked2.length){
-    longLength=linked1.length;
-  }else{
-    longLength=linked2.length
-  }
+    newList.append(linked1.head.value);
+    newList.append(linked2.head.value);
+    let currentL1 = linked1.head;
+    let currentL2 = linked2.head;
+    let x;
 
-  // loop through them and append the nodes.
+      // identify which one is longer;
 
-  for(let i=0;i>longLength;i++){
-    //go through the first one:
-    while(temp1.next){
-      zipList.append(temp1.next.value)
-      temp1=temp1.next
+
+    if (linked1.length >= linked2.length) {
+      x = linked1.length;
+    } else {
+      x = linked2.length;
     }
-    while(temp2.next){
-      zipList.append(temp2.next.value);
-      temp2=temp2.next
+
+      // loop through them and append the nodes.
+
+    for (let i = 0; i < x; i++) {
+
+      if (currentL1.next) {
+        newList.append(currentL1.next.value);
+        currentL1 = currentL1.next;
+      }
+
+      if (currentL2.next) {
+        newList.append(currentL2.next.value);
+        currentL2 = currentL2.next;
+      }
     }
+
+    return newList;
+
   }
+  
 
-return zipList;
 }
-}
-
 
 module.exports=LinkedList;
