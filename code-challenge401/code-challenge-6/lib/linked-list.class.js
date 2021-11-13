@@ -53,6 +53,8 @@ class LinkedList {
       node.next = nextNode;
     }
   }
+
+ 
   insertAfter(old, neu) {
     let currentNode = this.head;
     let nextNode;

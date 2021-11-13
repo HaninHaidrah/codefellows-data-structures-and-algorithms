@@ -15,6 +15,7 @@ class LinkedList {
   this.size=this.size+1
     this.head=newNode
    newNode.next=this.head
+   return this
 
   }
    // Indicates whether that value exists as a Node’s value somewhere within the list.

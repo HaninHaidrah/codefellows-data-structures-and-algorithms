@@ -7,14 +7,11 @@ const LinkedList = require('./linked-list.class');
 
 const data = new LinkedList();
 
-console.log(data.insert(1));
+console.log(data.insert(1),"insert");
 console.log(data.insert(2));
-console.log(data.insert(10));
-console.log(data.insert(12));
+console.log(data.includes(1),"include");
+console.log(data.toString(),"toString")
 
-
-
-// console.log(data.includes(10));
 
 // data.append(3);
 // data.append(4);

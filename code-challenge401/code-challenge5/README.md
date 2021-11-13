@@ -3,8 +3,7 @@
  implement some method to linkedList (insert node to the head // and check if the linkedlist has the the value or not )
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
-
+![whiteboard](whitboard.png)
 ## Approach & Efficiency
 * BIG(O)
     - insert=> O(1) space and time
@@ -12,4 +11,4 @@
     - toString => O(n) time // space 
 
 ## Solution
-<!-- Show how to run your code, and examples of it in actio
+![test](test.png)
