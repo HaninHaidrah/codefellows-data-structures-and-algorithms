@@ -1,12 +1,14 @@
 
 # Challenge Summary
- implement some methid to linkedList
+ implement some methods to linkedList
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
-
+![img](white.png)
 ## Approach & Efficiency
-big(n)
-
+* BIG O
+  - insert O(1) space//time
+  - includes O(n) space//time
+  - tostring O(n) space//time
 ## Solution
-<!-- Show how to run your code, and examples of it in actio
+![test](test.png)
+![test](testing.png)
