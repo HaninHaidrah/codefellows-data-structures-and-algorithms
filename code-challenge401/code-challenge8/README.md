@@ -9,4 +9,5 @@
 * BIG O
    - O(n)
 ## Solution
-![img](soultion.png)
+![img](solution.png)
+![img](test.png)
