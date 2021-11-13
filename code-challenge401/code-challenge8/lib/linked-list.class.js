@@ -62,8 +62,6 @@ class LinkedList {
     let x;
 
       // identify which one is longer;
-
-
     if (linked1.length >= linked2.length) {
       x = linked1.length;
     } else {
