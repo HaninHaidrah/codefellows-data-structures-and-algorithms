@@ -10,21 +10,14 @@ class LinkedList {
 
   insert(value) {
     const newNode = new Node(value);
-
-    if (!this.head) {
+    if (this.head) {
+      newNode.next = this.head;
+      this.head=newNode;
+    } else {
       this.head = newNode;
-      return this;
     }
-
-    let currentNode = this.head;
-    while (currentNode.next) {
-      currentNode = currentNode.next;
-    }
-
-    currentNode.next = newNode;
-
-    return this;
   }
+  
   append(value) {
     const node = new Node(value);
     if (!this.head) {
@@ -40,7 +33,7 @@ class LinkedList {
   insertBefore(old, neu) {
     let currentNode = this.head;
     if (currentNode.value === old) {
-      this.insert(neu);
+     return this.insert(neu);
     } else {
       let nextNode;
       while (currentNode.value !== old) {
@@ -52,6 +45,7 @@ class LinkedList {
       currentNode.next = node;
       node.next = nextNode;
     }
+    return this;
   }
   insertAfter(old, neu) {
     let currentNode = this.head;
