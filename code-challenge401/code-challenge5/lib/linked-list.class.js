@@ -6,37 +6,31 @@ class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
+    this.size=0
   }
-
+  //Adds a new node with that value to the head of the list with an O(1) Time performance.
   insert(value) {
-    const newNode = new Node(value);
-
-    if (!this.head) {
-      this.head = newNode;
-      return this;
-    }
-
-    let currentNode = this.head;
-    while (currentNode.next) {
-      currentNode = currentNode.next;
-    }
-
-    currentNode.next = newNode;
-
-    return this;
-  }
   
-  includes(value) {
-    let currentNode = this.head;
-    while (currentNode.value !== value) {
-      currentNode = currentNode.next;
-      if (currentNode === null) {
+  let newNode=new Node(value)
+  this.size=this.size+1
+    this.head=newNode
+   newNode.next=this.head
+
+  }
+   // Indicates whether that value exists as a Node’s value somewhere within the list.
+  includes(given) {
+    let pointer = this.head;
+    while (pointer.value !== given) {
+      pointer = pointer.next;
+      if (pointer === null) {
         return false;
       }
     }
+
     return true;
   }
-
+  // Returns: a string representing all the values in the Linked List, formatted as:
+                     //"{ a } -> { b } -> { c } -> NULL"
   toString() {
     let currentNode = this.head;
     let string = "";
@@ -51,5 +45,4 @@ class LinkedList {
   }
 }
 
-
-module.exports=LinkedList;
+module.exports = LinkedList;
