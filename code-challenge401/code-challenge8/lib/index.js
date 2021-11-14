@@ -17,8 +17,9 @@ console.log(data)
 const data1= new LinkedList();
 data1.append(7)
 data1.append(10)
+console.log(data1)
 
 const lists=new LinkedList();
 console.log(lists.zipLists(data,data1))
-
+// console.log(lists)
 

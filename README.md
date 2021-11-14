@@ -32,4 +32,4 @@ To run your tests
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge5)                                                                                              |  linked-list                    | 
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge-6)                                                                                             |  linked-list-insertation        | 
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge7)                                                                                              |  linked-list-Kth                | 
- 
+|[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge8)                                                                                              |  linked-list-zip                | 

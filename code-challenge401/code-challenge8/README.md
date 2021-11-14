@@ -1,18 +1,14 @@
 
-
 # Challenge Summary
- implement some method to linkedList
+ implement some methid to linkedList by linked two lists.
 
 ## Whiteboard Process
-![img](whiteboard.jpg)
+![img](white.jpg)
 
 ## Approach & Efficiency
-* big(o)
-- kthFromEnd =>
-    1. time big(1)
-    2.  space big(1)
+* BIG O
+   - O(n)
    
- 
-
 ## Solution
-![img](solutions2.png)
+![img](solution.png)
+![img](test.png)
