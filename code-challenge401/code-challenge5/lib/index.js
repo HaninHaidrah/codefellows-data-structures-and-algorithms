@@ -1,14 +1,20 @@
 'use strict'
 
 
-const LinkedList = require('../test/linked-list.class');
+const LinkedList = require('./linked-list.class');
 
 
 
 const data = new LinkedList();
 
-console.log(data.insert(1));
-data.include(2)
-data.toString()
+console.log(data.insert(1),"insert");
+console.log(data.insert(2));
+console.log(data.includes(1),"include");
+console.log(data.toString(),"toString")
+
+
+// data.append(3);
+// data.append(4);
+// data.include(2)
 
 

@@ -1,14 +1,14 @@
 
 # Challenge Summary
- implement some methods to linkedList
+ implement some method to linkedList (insert node to the head // and check if the linkedlist has the the value or not )
 
 ## Whiteboard Process
-![img](white.png)
+![whiteboard](whitboard.png)
 ## Approach & Efficiency
-* BIG O
-  - insert O(1) space//time
-  - includes O(n) space//time
-  - tostring O(n) space//time
+* BIG(O)
+    - insert=> O(1) space and time
+    - includes => O(n) time //space o(1)
+    - toString => O(n) time // space 
+
 ## Solution
 ![test](test.png)
-![test](testing.png)
