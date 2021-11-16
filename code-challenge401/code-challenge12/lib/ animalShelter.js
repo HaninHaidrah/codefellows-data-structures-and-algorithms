@@ -31,18 +31,14 @@ class AnimalShelter {
 
   dequeue(pref) {
     if (pref !== "cat" && pref !== "dog") {
-      return " null";
+      return (" null");
     }
-
-    for (let i = 0; i > this.length; i++) {
-      while (this.front.value.type !== pref) {
-      return  this.front = this.front.next;
-      } 
-        let temp = this.front;
-        this.front = this.front.next;
-        temp.next = null;
-        return temp.value;
-      
+        
+    if(this.front.value.type === pref){
+      let temp=this.front;
+      this.front=this.front.next;
+      temp.next=null;
+      return temp.value;
     }
   }
 }
