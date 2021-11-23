@@ -39,4 +39,4 @@ To run your tests
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge15)                                                                                             |  trees                          
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge16)                                                                                             |  tree-max  
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge17)                                                                                             |  tree-breadth-first  
-
+|[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge18)                                                                                             |  tree-fuzz-buzz 
