@@ -1,47 +1,39 @@
 "use strict";
-const BT = require("./binaryTree");
+const Queue = require("./queue");
+const KTQueue = new Queue();
 
 function fuzzBuzz(k) {
   let arr = [];
 
-  if(!k.root){
-      return ('the tree is empty')
+  if (!k.root) {
+    return "the tree is empty";
   }
 
-  if( typeof k.root.value === 'string'){
-    return ('the input should be a number')
-}
-   // pseduo code
-  // if node.value/5==0 arr.push(buzz)
-  // else if node.value/3==0 arr.push(fuzz)
-  // else if node.value/ && node.value arr.push(bzzfuzz)
-  // else arr.push('node.value')
-  // preorder() traverse
+  if (typeof k.root.value === "string") {
+    return "the input should be a number";
+  }
 
-  while (k.root) {
-    // recrusion function:
-    function _fuxxBuzzHelper(node) {
-      if (node.value % 5===0 && node.value % 3===0) {
-          console.log(node.value)
-        arr.push("FizzBuzz");
-      } else if (node.value % 5==0) {
-        arr.push("Buzz");
-      } else if (node.value % 3===0) {
-        arr.push("Fizz");
-      } else {
-        arr.push(`${node.value}`);
-      }
+  KTQueue.enqueue(k.root);
 
-      if (node.left) {
-        _fuxxBuzzHelper(node.left);
-      }
-      if (node.right) {
-        _fuxxBuzzHelper(node.right);
-      }
+  while (KTQueue.peek()) {
+    // dequeue the front and then do the functionlaty:
+    KTQueue.front = KTQueue.dequeue();
+
+    if (KTQueue.front.value % 5 === 0 && KTQueue.front.value % 3 === 0) {
+      arr.push("FizzBuzz");
+    } else if (KTQueue.front.value % 5 == 0) {
+      arr.push("Buzz");
+    } else if (KTQueue.front.value % 3 === 0) {
+      arr.push("Fizz");
+    } else {
+      arr.push(`${KTQueue.front.value}`);
     }
-    _fuxxBuzzHelper(k.root);
-    return arr;
+
+    if (KTQueue.front.children) {
+      KTQueue.enqueue(KTQueue.front.children);
+    }
   }
+  return arr;
 }
 
 module.exports = fuzzBuzz;
