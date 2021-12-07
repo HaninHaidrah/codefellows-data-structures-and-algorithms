@@ -42,3 +42,4 @@ To run your tests
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge18)                                                                                             |  tree-fuzz-buzz 
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge26/)                                                                                             |  sort 
 |[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge27)                                                                                             |  sort merge
+|[README](https://haninhaidrah.github.io/codefellows-data-structures-and-algorithms/code-challenge401/code-challenge28)                                                                                             |  sort quick
