@@ -13,3 +13,6 @@
 3. contains() : Returns: true or false, indicating if the key exists in the table already.
 4. hash (); Returns: Index in the collection for that key
 
+
+![img](test.png)
+
